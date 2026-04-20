@@ -1,0 +1,106 @@
+/* Color Palette */
+:root {
+    --pink: #381230;   /* Light pink so black text is easy to read */
+    --white: #ffffff;
+    --black: #000000; 
+    --gray-line: #eeeeee;
+    --meta-color: #555555;
+    --link-blue: #36ABFD;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Home Page Font Adjustment */
+.home-page {
+    font-family: 'Inter', sans-serif;
+}
+
+body { background-color: var(--white); color: #333; line-height: 1.5; }
+
+/* --- Top Navigation Bar  --- */
+nav {
+    background-color: var(--pink) !important;
+    padding: 1.2rem 2.5rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Forces the font to stay Inter and the color to stay White on every page */
+.logo-link, 
+.nav-links a {
+    text-decoration: none;
+    color: var(--white) !important;
+    font-family: 'Inter', sans-serif !important; 
+    font-weight: 400 !important;
+    font-size: 0.9rem;
+}
+
+.logo-link { font-size: 1.3rem; }
+.nav-links { list-style: none; display: flex; gap: 2rem; font-size: 0.9rem; }
+
+/* Layout Structure */
+main { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+
+.page-header { margin-bottom: 4rem; }
+
+.type-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    border-top: 1px solid var(--gray-line);
+}
+
+.type-example {
+    max-width: 800px;
+    text-align: left;
+}
+
+/* --- Centered Footer --- */
+.footer-cy {
+    text-align: center; /* Centered your name! */
+    padding: 40px 20px;
+    border-top: 1px solid var(--gray-line);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Typography elements */
+.emphasized { font-style: italic; font-weight: 700; }
+.hyperlink { color: var(--link-blue); text-decoration: underline; }
+
+/* --- Pairing 1: Bricolage & Inter --- */
+.p1-h1 { font-size: 2.986rem; font-weight: 700; line-height: 1.05; margin-bottom: 0.5rem; }
+.p1-h2 { font-size: 2.488rem; font-weight: 700; line-height: 1.1; margin-bottom: 0.5rem; }
+.p1-h3 { font-size: 2.074rem; font-weight: 600; line-height: 1.15; margin-bottom: 0.5rem; }
+.p1-h4 { font-size: 1.728rem; font-weight: 600; line-height: 1.2; }
+.p1-h5 { font-size: 1.440rem; font-weight: 600; line-height: 1.2; }
+.p1-h6 { font-size: 1.200rem; font-weight: 600; line-height: 1.2; }
+.p1-body { font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 1.5; }
+.p1-body .emphasized {font-family: 'Inter', sans-serif; font-style: italic; font-weight: 700;}
+.p1-body .hyperlink { font-family: 'Inter', sans-serif; color: var(--link-blue); text-decoration: underline;}
+
+/* --- Pairing 2: Playfair & Montserrat --- */
+.p2-h1 { font-size: 3.157rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.5rem; }
+.p2-h2 { font-size: 2.36rem; font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; }
+.p2-h3 { font-size: 1.77rem; font-weight: 700; line-height: 1.3; margin-bottom: 0.5rem; }
+.p2-h4 { font-size: 1.333rem; font-weight: 700; line-height: 1.3; }
+.p2-h5 { font-size: 1.1rem; font-weight: 700; line-height: 1.3; font-style: italic; }
+.p2-h6 { font-size: 0.9rem; font-weight: 700; line-height: 1.3; letter-spacing: 0.1em; }
+.p2-body { font-family: 'Montserrat', sans-serif; font-size: 1rem; line-height: 1.6; } 
+.p2-body .emphasized {font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 700;}
+.p2-body .hyperlink { font-family: 'Montserrat', sans-serif; color: var(--link-blue); text-decoration: underline;}
+
+/* --- Pairing 3: Courier & Nunito --- */
+.p3-h1 { font-size: 2.488rem; font-weight: 500; line-height: 1.4; margin-bottom: 0.5rem; }
+.p3-h2 { font-size: 2.074rem; font-weight: 500; line-height: 1.4; margin-bottom: 0.5rem; }
+.p3-h3 { font-size: 1.728rem; font-weight: 500; line-height: 1.4; margin-bottom: 0.5rem; }
+.p3-h4 { font-size: 1.440rem; font-weight: 500; line-height: 1.5; margin-bottom: 0.5rem; }  
+.p3-h5 { font-size: 1.200rem; font-weight: 500; line-height: 1.5; } 
+.p3-h6 { font-size: 1rem; font-weight: 600; line-height: 1.5; } 
+.p3-body { font-family: 'Nunito', sans-serif; font-size: 1rem; line-height: 1.4}
+.p3-body .emphasized {font-family: 'Nunito', sans-serif; font-style: italic; font-weight: 700;}
+.p3-body .hyperlink { font-family: 'Nunito', sans-serif; color: var(--link-blue); text-decoration: underline;}
