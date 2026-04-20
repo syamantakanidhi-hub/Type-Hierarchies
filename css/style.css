@@ -39,6 +39,12 @@ nav {
     font-size: 0.9rem;
 }
 
+.nav-links a.active {
+    font-weight: 700;           
+    border-bottom: 2px solid; 
+    opacity: 1;       
+}
+
 .logo-link { font-size: 1.3rem; }
 .nav-links { list-style: none; display: flex; gap: 2rem; font-size: 0.9rem; }
 
