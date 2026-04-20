@@ -66,6 +66,10 @@ main { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
     text-align: left;
 }
 
+.placeholder-section {
+    align-items: center;
+}
+
 /* --- Centered Footer --- */
 .footer-cy {
     text-align: center; /* Centered your name! */
